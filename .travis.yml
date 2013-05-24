@@ -1,14 +1,11 @@
 language: php
 
 php:
-  - 5.2
   - 5.3
   - 5.4
 
 env:
-  - DB=mysql
   - DB=sqlite
-  - DB=pgsql
 
 before_script:
   - sh -c "cd .. ; mkdir lib ; cd lib ; git clone --depth 1 git://github.com/rchavik/cakephp -b 2.3-reset-uses"
